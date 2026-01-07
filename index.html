@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nopi Widiyaswati - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 1. RESET & VARIABLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Background Halus */
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        /* 2. HEADER (Modern) */
+        header {
+            background: #ffffff;
+            padding: 60px 20px 40px;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3436;
+            margin-bottom: 5px;
+        }
+
+        header .role {
+            color: #636e72;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        /* 3. CONTAINER */
+        .container {
+            max-width: 800px; /* Lebar tengah */
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive Grid */
+            gap: 30px;
+        }
+
+        /* 4. KARTU UMUM (Untuk Link & Project) */
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.02);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Efek Naik */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+
+        .card h3 {
+            color: #2d3436;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            text-align: center;
+            border-bottom: 2px solid #f1f2f6;
+            padding-bottom: 10px;
+        }
+
+        /* 5. TOMBOL LINKTREE STYLE */
+        .btn-link {
+            display: block; /* Tumpuk ke bawah */
+            width: 100%;
+            background-color: #f8f9fa;
+            color: #2d3436;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            font-weight: 500;
+            border: 1px solid #dfe6e9;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Variasi Warna Tombol */
+        .btn-wa {
+            background-color: #d1fae5; /* Hijau Muda */
+            border-color: #10b981;
+            color: #065f46;
+        }
+        .btn-email {
+            background-color: #fee2e2; /* Merah Muda */
+            border-color: #ef4444;
+            color: #991b1b;
+        }
+        .btn-li {
+            background-color: #dbeafe; /* Biru Muda */
+            border-color: #3b82f6;
+            color: #1e40af;
+        }
+        .btn-project {
+            background-color: #2d3436; /* Hitam */
+            border-color: #2d3436;
+            color: white;
+        }
+
+        /* Efek Hover Tombol */
+        .btn-link:hover {
+            transform: scale(1.02);
+            filter: brightness(0.95);
+        }
+
+        /* 6. FOOTER */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Nopi Widiyaswati</h1>
+        <p class="role">Aspiring Web Developer & Learner</p>
+    </header>
+
+    <!-- CONTAINER UTAMA -->
+    <div class="container">
+
+        <!-- KARTU 1: LINKTREE (Kontak & Sosmed) -->
+        <div class="card">
+            <h3>Get In Touch</h3>
+            
+            <!-- TOMBOL WHATSAPP -->
+            <a href="https://wa.me/6282329483867" target="_blank" class="btn-link btn-wa">
+                <span>💬</span> Chat on WhatsApp
+            </a>
+
+            <!-- TOMBOL EMAIL -->
+            <a href="mailto:nopi.widiyaswati21@gmail.com" class="btn-link btn-email">
+                <span>📧</span> Send Email
+            </a>
+
+            <!-- TOMBOL LINKEDIN -->
+            <a href="https://www.linkedin.com/in/nopi-widiyaswati/" target="_blank" class="btn-link btn-li">
+                <span>👔</span> LinkedIn Profile
+            </a>
+        </div>
+
+        <!-- KARTU 2: PROJECTS (Tautan Kerja) -->
+        <div class="card">
+            <h3>My Projects</h3>
+            <p style="text-align: center; color: #666; margin-bottom: 15px;">Check out my latest works:</p>
+            
+            <!-- LINK KE NOVEL -->
+            <a href="https://nopee-21.github.io/cerita_lina/" target="_blank" class="btn-link btn-project">
+                <span>📖</span> Read Novel "Satu Baris Kode"
+            </a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Nopi Widiyaswati. Built with HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
